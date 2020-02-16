@@ -52,7 +52,7 @@ func (p *Pool) run() {
 	}
 }
 
-func run() {
+func Run() {
 	t := NewTask(func() error {
 		fmt.Println(time.Now())
 		return nil
