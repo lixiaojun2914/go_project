@@ -3,6 +3,7 @@ package test
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func Get(c *gin.Context) {
@@ -25,7 +26,7 @@ func Post(c *gin.Context) {
 	if err != nil {
 		fmt.Println("error")
 	}
-	c.JSON(200, gin.H{
+	c.JSON(http.StatusOK, gin.H{
 		"name":   data.Name,
 		"action": data.Action,
 	})

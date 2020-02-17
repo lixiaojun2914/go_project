@@ -1,7 +1,10 @@
 package apps
 
-import "github.com/lib/pq"
+import (
+	"database/sql"
+	_ "github.com/lib/pq"
+)
 
 type App struct {
-	db *pq.Driver
+	sql.ColumnType
 }
