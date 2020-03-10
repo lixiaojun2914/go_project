@@ -2,9 +2,10 @@ package main
 
 import (
 	"flag"
-	"github.com/gin-gonic/gin"
 	"test/database"
 	"test/router"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -12,5 +13,5 @@ func main() {
 	r := gin.Default()
 	router.InitRouter(r)
 	database.Init()
-	//r.Run("127.0.0.1:8080")
+	r.Run("127.0.0.1:8080")
 }
