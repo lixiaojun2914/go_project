@@ -12,6 +12,6 @@ func main() {
 	flag.Parse()
 	r := gin.Default()
 	router.InitRouter(r)
-	database.Init()
-	r.Run("127.0.0.1:8080")
+	database.InitDb()
+	// r.Run("127.0.0.1:8080")
 }
