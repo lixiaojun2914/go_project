@@ -4,8 +4,8 @@ services:
         build: .
         command: test
         ports:
-            - target: 8080
-              published: 8080
+            - target: 80
+              published: 80
         networks: 
             - mynet
         volumes:

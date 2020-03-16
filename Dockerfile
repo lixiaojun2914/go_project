@@ -5,5 +5,5 @@ FROM go
 
 COPY . /code
 WORKDIR /code
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["./test"]
