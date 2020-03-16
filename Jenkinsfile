@@ -9,8 +9,7 @@ pipeline{
     }
     post{
         success{
-            mail to: '982090951@qq.com',
-            subject: 'build'
+            mail to: '982090951@qq.com', subject: 'build', body: 'test'
         }
     }
 }
