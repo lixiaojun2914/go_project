@@ -1,12 +1,15 @@
 pipeline{
     agent any
+    tools{
+        go '1.14'
+    }
     options{
         buildDiscarder(logRotator(numToKeepStr: '10'))
     }
     stages{
         stage("Build"){
             steps{
-                echo "Lixiaojun World"
+                sh 'go build'
             }
         }
     }
