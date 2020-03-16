@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        go '1.2'
+        go 'go1.2'
     }
     options{
         buildDiscarder(logRotator(numToKeepStr: '10'))
