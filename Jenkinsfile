@@ -10,7 +10,6 @@ pipeline{
         stage("Build"){
             steps{
                 sh 'go build'
-                sh 'docker-compose up -d'
                 echo 'test'
             }
         }
