@@ -1,8 +1,8 @@
 pipeline{
     agent any
-    tools{
-        go 'go'
-    }
+    // tools{
+    //     go 'go'
+    // }
     options{
         buildDiscarder(logRotator(numToKeepStr: '10'))
     }
@@ -15,9 +15,9 @@ pipeline{
             }
         }
     }
-    post{
-        success{
-            mail to: '982090951@qq.com', subject: 'build', body: 'test'
-        }
-    }
+    // post{
+    //     success{
+    //         mail to: '982090951@qq.com', subject: 'build', body: 'test'
+    //     }
+    // }
 }
