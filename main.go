@@ -12,5 +12,5 @@ func main() {
 	r := gin.Default()
 	router.InitRouter(r)
 	// database.InitDb()
-	r.Run(":8080")
+	r.Run()
 }
