@@ -6,4 +6,3 @@ FROM golang
 COPY . /code
 WORKDIR /code
 EXPOSE 8080
-ENTRYPOINT ["./test"]s
