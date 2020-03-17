@@ -2,9 +2,9 @@ version: "3.5"
 services: 
     web:
         build: .
-        command: test
+        command: ./test
         ports:
-            - target: 80
+            - target: 8080
               published: 80
         networks: 
             - mynet
