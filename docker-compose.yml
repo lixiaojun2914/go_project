@@ -7,10 +7,6 @@ services:
             - "80:8080"
         networks: 
             - mynet
-        volumes:
-            - type: volume
-              source: myvol
-              target: /code
 networks: 
     mynet:
 volumes: 
