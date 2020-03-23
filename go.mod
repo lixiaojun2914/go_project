@@ -7,7 +7,7 @@ require (
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/protobuf v1.3.5 // indirect
-	github.com/jinzhu/gorm v1.9.12 // indirect
+	github.com/jinzhu/gorm v1.9.12
 	github.com/json-iterator/go v1.1.9 // indirect
 	github.com/klauspost/compress v1.10.0 // indirect
 	github.com/klauspost/cpuid v1.2.3 // indirect
